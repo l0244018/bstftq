@@ -62,7 +62,7 @@ body.login {
 #login-form {
     margin: 0;
     padding-top: 10px;
-    display: none;
+    /*display: none;*/
 }
 
 #login-form input[type="text"],

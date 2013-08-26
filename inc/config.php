@@ -2,7 +2,7 @@
 /**
  * config.php
  *
- * Author: pixelcave
+ * Author: Brainstorm Solutions
  *
  * Configuration php file. It containts variables used in the template
  *
@@ -18,9 +18,9 @@ textdomain("default");
 
 // Template variables
 $template = array(
-    'name'        => 'uAdmin',
-    'version'     => '1.3.2',
-    'author'      => 'pixelcave',
+    'name'        => 'bstftq',
+    'version'     => '1.0.0',
+    'author'      => 'Brainstorm Solutions',
     'title'       => 'uAdmin - Professional, Responsive and Flat Admin Template',
     'description' => 'uAdmin is a Professional, Responsive and Flat Admin Template created by pixelcave and published on Themeforest',
     'header'      => '', // 'fixed-top', 'fixed-bottom'

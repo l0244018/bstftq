@@ -51,21 +51,9 @@
                     <img src="img/template/uadmin_logo.png" alt="logo">
                 </a>
             </div>
-
-            <!-- Login Buttons -->
-            <div id="login-buttons">
-                <h5 class="page-header-sub">Login with..</h5>
-                <button id="login-btn-facebook" class="btn btn-primary"><i class="icon-facebook"></i> Facebook</button>
-                <button id="login-btn-twitter" class="btn btn-info"><i class="icon-twitter"></i> Twitter</button>
-                <button id="login-btn-email" class="btn">or Email <i class="icon-envelope"></i></button>
-            </div>
-            <!-- END Login Buttons -->
             
             <!-- Login Form -->
             <form id="login-form" action="index.php" method="post" class="form-inline">
-                <div class="control-group">
-                    <a href="#" class="login-back"><i class="icon-arrow-left"></i></a>
-                </div>
                 <div class="control-group">
                     <div class="input-append">
                         <input type="text" id="login-email" placeholder="<?php echo _("Email"); ?>">
@@ -114,21 +102,7 @@
         <!-- Javascript code only for this page -->
         <script>
             $(function () {
-
-                var loginButtons = $('#login-buttons');
                 var loginForm = $('#login-form');
-
-                // Reveal login form
-                $('#login-btn-email').click(function(){
-                    loginButtons.slideUp(600);
-                    loginForm.slideDown(450);
-                });
-
-                // Hide login form
-                $('.login-back').click(function(){
-                    loginForm.slideUp(450);
-                    loginButtons.slideDown(600);
-                });
 
                 // Don't let 'forgot pass' button submit the form
                 $('#login-button-pass').click(function(){
