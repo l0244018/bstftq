@@ -8,6 +8,14 @@
  *
  */
 
+// Locale variable default
+$locale = "fr_CA";
+
+putenv("LANG=".$locale);
+setlocale(LC_ALL, $locale);
+bindtextdomain("default", "Locale");
+textdomain("default");
+
 // Template variables
 $template = array(
     'name'        => 'uAdmin',

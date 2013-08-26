@@ -8,13 +8,7 @@
         <meta charset="utf-8">
 
         <title><?php echo $template['title'] ?></title>
-<?php 
-	$locale = "fr_CA";
-	putenv("LANG=".$locale);
-	setlocale(LC_ALL, $locale);
-	bindtextdomain("default", "Locale");
-	textdomain("default");
-?>
+
         <meta name="description" content="<?php echo $template['description'] ?>">
         <meta name="author" content="<?php echo $template['author'] ?>">
         <meta name="robots" content="noindex, nofollow">
