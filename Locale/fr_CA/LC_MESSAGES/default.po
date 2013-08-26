@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bstftq\n"
+"POT-Creation-Date: 2013-08-26 11:43-0500\n"
+"PO-Revision-Date: 2013-08-26 11:43-0500\n"
+"Last-Translator: Dave Lizotte <webmaster@brainstormsolutions.ca>\n"
+"Language-Team: \n"
+"Language: fr_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\bstftq\n"
+
+#: C:\wamp\www\bstftq/login.php:77
+msgid "Email"
+msgstr "Courriel"
+
+#: C:\wamp\www\bstftq/login.php:83
+msgid "Password"
+msgstr "Mot de passe"
+
+#: C:\wamp\www\bstftq/login.php:89
+msgid "Forgot Pass?"
+msgstr "Mot de passe oublié ?"
+
+#: C:\wamp\www\bstftq/login.php:90
+msgid "Login"
+msgstr "Connexion"
+
+#: C:\wamp\www\bstftq/login.php:92
+msgid "Remember me"
+msgstr "Ce souvenir"
