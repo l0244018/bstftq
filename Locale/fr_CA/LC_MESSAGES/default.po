@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bstftq\n"
-"POT-Creation-Date: 2013-08-26 11:43-0500\n"
-"PO-Revision-Date: 2013-08-26 11:43-0500\n"
+"POT-Creation-Date: 2013-08-26 12:33-0500\n"
+"PO-Revision-Date: 2013-08-26 12:34-0500\n"
 "Last-Translator: Dave Lizotte <webmaster@brainstormsolutions.ca>\n"
 "Language-Team: \n"
 "Language: fr_CA\n"
@@ -15,22 +15,30 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: C:\\wamp\\www\\bstftq\n"
 
-#: C:\wamp\www\bstftq/login.php:77
+#: C:\wamp\www\bstftq/dashboard.php:10
+msgid "Bstftq"
+msgstr ""
+
+#: C:\wamp\www\bstftq/dashboard.php:11
+msgid "Dashboard"
+msgstr ""
+
+#: C:\wamp\www\bstftq/login.php:59
 msgid "Email"
 msgstr "Courriel"
 
-#: C:\wamp\www\bstftq/login.php:83
+#: C:\wamp\www\bstftq/login.php:65
 msgid "Password"
 msgstr "Mot de passe"
 
-#: C:\wamp\www\bstftq/login.php:89
+#: C:\wamp\www\bstftq/login.php:71
 msgid "Forgot Pass?"
 msgstr "Mot de passe oublié ?"
 
-#: C:\wamp\www\bstftq/login.php:90
+#: C:\wamp\www\bstftq/login.php:72
 msgid "Login"
 msgstr "Connexion"
 
-#: C:\wamp\www\bstftq/login.php:92
+#: C:\wamp\www\bstftq/login.php:74
 msgid "Remember me"
 msgstr "Ce souvenir"

@@ -53,7 +53,7 @@
             </div>
             
             <!-- Login Form -->
-            <form id="login-form" action="index.php" method="post" class="form-inline">
+            <form id="login-form" action="dashboard.php" method="post" class="form-inline">
                 <div class="control-group">
                     <div class="input-append">
                         <input type="text" id="login-email" placeholder="<?php echo _("Email"); ?>">
