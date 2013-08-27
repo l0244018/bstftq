@@ -1,4 +1,18 @@
-<?php include 'inc/config.php'; // Configuration php file ?>
+<?php 
+	include 'inc/config.php'; // Configuration php file 
+	include 'inc/class/class.uFlex.php';
+
+	if($_POST['login-email'] <> ''){
+		$username = $_POST['login-email'];
+		$password = $_POST['login-password'];
+		$auto = $_POST['remember'];  //To remember user with a cookie for autologin
+		
+		$user = new uFlex();
+		
+		//Login with credentials
+		$user->login($username,$password,$auto);
+	}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -53,16 +67,16 @@
             </div>
             
             <!-- Login Form -->
-            <form id="login-form" action="dashboard.php" method="post" class="form-inline">
+            <form id="login-form" action="login.php" method="post" class="form-inline">
                 <div class="control-group">
                     <div class="input-append">
-                        <input type="text" id="login-email" placeholder="<?php echo _("Email"); ?>">
+                        <input type="text" id="login-email" name="login-email" placeholder="<?php echo _("Email"); ?>">
                         <span class="add-on"><i class="icon-envelope-alt"></i></span>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="input-append">
-                        <input type="password" id="login-password" placeholder="<?php echo _("Password"); ?>">
+                        <input type="password" id="login-password" name="login-password" placeholder="<?php echo _("Password"); ?>">
                         <span class="add-on"><i class="icon-asterisk"></i></span>
                     </div>
                 </div>
@@ -72,8 +86,21 @@
                         <button class="btn btn-small btn-success"><i class="icon-arrow-right"></i> <?php echo _("Login"); ?></button>
                     </div>
                     <div class="input-switch switch-small pull-left" data-toggle="tooltip" title="<?php echo _("Remember me"); ?>" data-on="success" data-off="danger" data-on-label="<i class='icon-ok icon-white'></i>" data-off-label="<i class='icon-remove'></i>">
-                        <input type="checkbox">
+                        <input type="checkbox" name="remember">
                     </div>
+                </div>
+                <div class="control-group remove-margin clearfix">
+                	<?php 
+	                	//not required, just an example usage of the built-in error reporting system
+	                	if($user->signed){
+	                		echo "User Successfully Logged in";
+	                	}else{
+	                		//Display Errors
+	                		foreach($user->error() as $err){
+	                			echo "<b>Error:</b> {$err} <br/ >";
+	                		}
+                		}
+                	?>
                 </div>
             </form>
             <!-- END Login Form -->

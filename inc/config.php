@@ -37,12 +37,12 @@ $primary_nav = array(
         'icon'  => 'icon-fire'
     ),
     array(
-        'name'  => 'UI Elements',
+        'name'  => 'Projet',
         'icon'  => 'icon-magic',
         'sub'   => array(
             array(
-                'name' => 'General',
-                'url' => 'page_ui_general.php',
+                'name' => 'Liste des projets',
+                'url' => 'list_project.php',
                 'icon'  => 'icon-star'
             ),
             array(
